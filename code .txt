@@ -1,0 +1,4 @@
+# https://github.com/luka3117/JcShiny
+library(shiny)
+runGitHub(repo = "JcShiny", username = "luka3117")
+runGitHub(repo = "luka3117/JcShiny")
