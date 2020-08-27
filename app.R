@@ -8,14 +8,15 @@ library(shiny)
 ui <- fluidPage(
   sliderInput(
     inputId = "num",
-    label = "col:",
+    label = "iris data変数col 番号:",
     min = 1,
     max = 5,
-    value = 30
+    value = 3
   ),
-  shiny::textInput(inputId = "qq",
-                   label = "qqq",
-                   value = "ss"),
+  shiny::textInput(inputId = "aaa", 
+                   # label = c("a", "b"),
+                   label = "name",
+                   value = "b"),
   sliderInput(
     inputId = "bin",
     label = "Number of bins:",
@@ -24,12 +25,12 @@ ui <- fluidPage(
     value = 30
   )
   ,
-  plotOutput("res")
+  plotOutput("iris.plot")
 )
 
 server <- function(input, output) {
-  output <- renderPlot({
-    plot(iris[,input])
+  output$iris.plot <- renderPlot({
+    plot(iris[,input$num])
   })
 }
 
