@@ -1,0 +1,93 @@
+---
+title: aa
+author : aa
+output: html_document
+runtime: shiny
+---
+
+# select Input
+
+https://www.youtube.com/watch?v=ztZflaWuIH0
+
+```{r select-input}
+selectInput(
+  inputId = "ExampleDropDown",
+  label = "please make a selection",
+  choices = list("value1" = 1,
+                 "value2" = 2,
+                 "value3" = 3)
+  )
+```
+
+
+```{r print-select-input}
+renderPrint(input$ExampleDropDown)
+```
+
+
+# slider input
+```{r}
+sliderInput(
+  inputId = "sliderExample",
+  label = "this is a slider",
+  min = 0,
+  max = 5,
+  value = 1
+  )
+
+sliderInput(
+  inputId = "sliderExample2",
+  label = "two-ended slider",
+  min = 0,
+  max = 10,
+  value = c(4, 6)
+  )
+```
+
+# check box input
+```{r}
+checkboxInput(inputId = "checkExample", label = "single checkbox")
+checkboxGroupInput(inputId = "dsfdf" ,
+                   label = "aa",
+                   choices = list(1, 2, 3))
+```
+
+
+
+# create radio button
+
+```{r}
+radioButtons(inputId = "sfds" ,
+             label = "dsfds",
+             choices = list(1, 2, 3))
+```
+
+
+# create data input 
+
+```{r}
+dateInput(inputId = "dsfds", label = "dsfdsfs")
+dateRangeInput(inputId = "dsfds", label = "dsfdsfs", format = "mm/dd/yyyy")
+dateRangeInput(inputId = "dsfds", label = "dsfdsfs")
+
+```
+
+
+# dlsfjldsfjsd
+
+
+```{r}
+textInput(inputId = "aa",
+          label = "dkjfldsf")
+
+renderText(input$aa)
+```
+
+
+```{r}
+renderDataTable(mtcars)
+```
+
+
+
+

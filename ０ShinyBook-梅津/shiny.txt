@@ -1,0 +1,29 @@
+##############################################################
+令和元年8月7日(水)午後5時32分
+##############################################################
+
+https://github.com/Np-Ur/ShinyBook
+
+shiny 
+
+
+https://github.com/Np-Ur/ShinyBook.git
+
+
+https://github.com/Np-Ur/ShinyBook.git
+
+
+runGitHub("ShinyBook", "Np-Ur", subdir= "chapter02/09-add-CSS")
+runGitHub("r-example", "luka3117", subdir= "AA/aa.r")
+
+
+https://github.com/luka3117/r-example
+
+
+
+Rコンソール上で、以下のように実行できる。
+
+chapter02/09-add-CSS を実行する場合。
+
+> library(shiny)
+ただし、用いているライブラリをインストールしていない場合、エラーになるのでご注意ください。

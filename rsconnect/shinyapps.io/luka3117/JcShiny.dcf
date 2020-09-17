@@ -1,0 +1,12 @@
+name: JcShiny
+title: JcShiny
+username:
+account: luka3117
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2716381
+bundleId: 3564805
+url: https://luka3117.shinyapps.io/JcShiny/
+when: 1598555387.60631
+asMultiple: FALSE
+asStatic: FALSE
